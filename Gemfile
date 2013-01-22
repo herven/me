@@ -5,7 +5,8 @@ gem 'rails', '3.2.10'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+gem 'mysql2'
+
 
 
 # Gems used only for assets and not required
@@ -13,17 +14,30 @@ gem 'sqlite3'
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
+  gem "haml-rails"
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
+  gem "twitter-bootstrap-rails"
+  gem "therubyracer"
+  gem "less-rails"
 end
 
 group :development do
 	gem 'powder'
-	gem 'guard'
 end
+
+group :test do
+	gem 'guard'
+	gem 'rb-fsevent', :require => false
+	gem 'growl'
+	gem 'guard-test'
+	gem 'guard-livereload'
+	gem 'ruby-prof'
+	gem "factory_girl_rails", "~> 4.0"
+end 
 
 gem 'jquery-rails'
 
