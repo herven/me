@@ -4,3 +4,13 @@
 en:
   hello_world: Hello world!
   hello_flash: Hello flash!
+  home:        HOME
+  cv:          CV
+  contact:     CONTACTS
+  link:        LINKS
+  adresse_contact: "Address & contacts"
+  knowlege:        Knowledge
+  experience:      "Professional experience"
+  formation:       Training
+  misc:            Miscellaneous
+  download:        "PDF & Word versions"

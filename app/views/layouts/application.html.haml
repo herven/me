@@ -29,49 +29,19 @@
           / %a.brand(href="#") Me TODO add logo -------------------------------
           .container.nav-collapse.collapse
             %ul.nav
-              %li.active= link_to "Home", root_path
-              %li= link_to "CV", cv_path
-              %li= link_to "Contacts", contacts_path
-              %li= link_to "Liens", links_path
+              %li.active= link_to t(:home), root_path
+              %li= link_to t(:cv), cv_path
+              %li= link_to t(:contact), contacts_path
+              %li= link_to t(:link), links_path
 
             = flag_show(params[:locale])
 
     .container
-
-      .row
-        .span3.bs-docs-sidebar.hidden-phone.hidden-tablet
-          .well.bs-docs-sidenav.affix
-            %ul.nav.nav-list
-              %li
-                %a{href: "#address"}
-                  Adresse & contacts
-                  / %i.icon-chevron-right.pull-right.icon-white
-              %li
-                %a{href: "#skills"}
-                  Connaissances
-                  / %i.icon-chevron-right.pull-right.icon-white
-              %li
-                %a{href: "#profskills"}
-                  Expériences professionnelles
-                  / %i.icon-chevron-right.pull-right.icon-white
-              %li
-                %a{href: "#background"}
-                  Formations
-                  / %i.icon-chevron-right.pull-right.icon-white
-              %li
-                %a{href: "#misc"}
-                  Divers
-                  / %i.icon-chevron-right.pull-right.icon-white
-              %li
-                %a{href: "#download"}
-                  Versions PDF & Word
-                  / %i.icon-chevron-right.pull-right.icon-white
-        .span9
-          = bootstrap_flash
-          = yield
+      = yield
       %br
-  %footer.well
-    %p.pull-right &copy; Company 2013
+    %footer.footer
+      .container
+        %p.pull-right &copy; Company 2013
     /
       Javascripts
       \==================================================

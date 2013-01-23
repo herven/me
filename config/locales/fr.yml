@@ -1,4 +1,13 @@
 fr:
   hello_world: Bonjour!
   hello_flash: Bonjour flash!
-  home:        Acceuil
+  home:        ACCUEIL
+  cv:          CV
+  contact:     CONTACTS
+  link:        LIENS
+  adresse_contact: "Adresse & contacts"
+  knowlege:        Connaissances
+  experience:      "Expériences professionnelles"
+  formation:       Formations
+  misc:            Divers
+  download:        "Versions PDF & Word"

@@ -1,3 +1,13 @@
 ru:
   hello_world: Privet!
   hello_flash: Privet flash!
+  home:        ГЛАВНАЯ
+  cv:          РЕЗЮМЕ
+  contact:     КОНТАКТЫ
+  link:        ССЫЛКИ
+  adresse_contact: "Адрес и контакты"
+  knowlege:        Знания
+  experience:      "Профессиональный опыт"
+  formation:       Образование
+  misc:            Разное
+  download:        "PDF и Word Файлы"
