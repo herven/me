@@ -48,7 +48,13 @@ Me::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
   root :to => 'pages#index'
-  match '/:locale' => 'pages#index'
+  scope "(:locale)", :locale => /fr|en|ru/ do
+   # resources :contact
+   match "/"      => "pages#index"
+   get "cv"       => "pages#cv"
+   get "contacts" => "pages#contacts"
+   get "links"    => "pages#links"
+  end
 
   # See how all your routes lay out with "rake routes"
 

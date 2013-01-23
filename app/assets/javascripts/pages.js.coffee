@@ -2,7 +2,13 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 
+# $.fn.activateMenu = ->
+#   @click (e) ->
+#     $(@).removeClass('active')
+#     # if !$(@).hasClass('active')
+#     # parent = $('.nav-collapse li a .active').hide()
+#     # $(@).addClass('active')
+
 # $(document).ready () ->
-#   $('.span3').affix()
-#   $('.span3').scrollspy({target: '.nav'})
+#   $('.nav li').activateMenu()
 

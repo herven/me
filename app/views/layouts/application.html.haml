@@ -25,12 +25,14 @@
             %span.icon-bar
             %span.icon-bar
             %span.icon-bar
-          %a.brand(href="#") Me
-          .container.nav-collapse
+            %span.icon-bar
+          / %a.brand(href="#") Me TODO add logo -------------------------------
+          .container.nav-collapse.collapse
             %ul.nav
-              %li= link_to "CV", root_path(locale: params[:locale])
-              %li= link_to "Contacts", root_path(locale: params[:locale])
-              %li= link_to "Liens", root_path(locale: params[:locale])
+              %li.active= link_to "Home", root_path
+              %li= link_to "CV", cv_path
+              %li= link_to "Contacts", contacts_path
+              %li= link_to "Liens", links_path
 
             = flag_show(params[:locale])
 
